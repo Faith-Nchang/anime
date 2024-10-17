@@ -1,10 +1,10 @@
 # Web Development Project 4 - *Name of App Here*
 
-Submitted by: **Your Name Here**
+Submitted by: **Anime Gallery**
 
-This web app: **insert description**
+This web app: **using api to get cat info**
 
-Time spent: **X** hours spent in total
+Time spent: **4** hours spent in total
 
 ## Required Features
 
