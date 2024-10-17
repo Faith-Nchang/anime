@@ -1,42 +1,39 @@
+/* App.css */
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  background-color: black; /* Set the entire page background to black */
+  height: 100vh; /* Use 100vh to make sure it covers the entire viewport height */
   text-align: center;
+  padding: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* App container styling */
+.app {
+  display: flex; /* Use flexbox to arrange items */
+  justify-content: space-between; /* Space out the columns */
+  margin: 20px; /* Add some margin around the app */
+  height: 90vh;
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for each section */
+.viewed-history,
+.display-card,
+.banned-list {
+  flex: 1; /* Allow each section to grow equally */
+  margin: 0 10px; /* Add some horizontal margin between columns */
+  background-color: rgba(128, 128, 128, 0.7); /* Set a semi-transparent gray background */
+  color: white; /* Set text color to white for better contrast */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  padding: 20px; /* Optional: Add some padding for inner spacing */
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.display-card {
+  flex: 2; /* Make the middle column (DisplayCard) occupy more space */
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+li {
+  list-style-type: none; /* Remove the bullet points */
+  padding-bottom: 30px; /* Add space between list items */
 }

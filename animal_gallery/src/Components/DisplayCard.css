@@ -1,0 +1,30 @@
+/* DisplayCard.css */
+
+.display-card {
+  
+    padding: 20px; /* Add padding to the card */
+    border-radius: 8px; /* Rounded corners for the card */
+    text-align: center; /* Center-align text and images */
+  }
+  
+  .display-card__image {
+    padding: 10px;
+    border-radius: 8px; /* Optional: Add rounded corners to the image */
+  }
+  
+  .display-card__name {
+    margin: 10px 0; /* Space above and below the name */
+  }
+  
+  .display-card__origin {
+    margin-top: 10px; /* Space above the origin text */
+  }
+  
+  /* Optional: Style the features section */
+  .features {
+    display: flex;
+    justify-content: center; /* Center the feature buttons */
+    flex-wrap: wrap; /* Wrap buttons if necessary */
+    gap: 10px; /* Space between buttons */
+  }
+  
