@@ -66,6 +66,11 @@ const App = () => {
     setViewedCats([...viewedCats, cat]);
   }
 
+  const removeFromBanned = (item) => {
+    setBanList(prevBanList => prevBanList.filter(name => name !== item));
+  };
+
+  
   // Fetch new data when the component first mounts
   // useEffect(() => {
   //   fetchRandomCat();
@@ -123,7 +128,7 @@ const App = () => {
         <button onClick={fetchRandomCat} className='discover'>Discover</button>
       </div>
       <div className="banned-list">
-        <BannedList banned={banList} />
+        <BannedList banned={banList} remove={removeFromBanned}/>
       </div>
     </div>
   );
