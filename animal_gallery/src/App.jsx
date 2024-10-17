@@ -67,9 +67,9 @@ const App = () => {
   }
 
   // Fetch new data when the component first mounts
-  useEffect(() => {
-    fetchRandomCat();
-  }, []);
+  // useEffect(() => {
+  //   fetchRandomCat();
+  // }, []);
 
   // Handle banning an item
   const handleBanItem = (item) => {
@@ -94,9 +94,14 @@ const App = () => {
 
   return (
     <div className="app">
-      <div className="viewed-history">
-        <ViewedHistory viewedCats={viewedCats} />
-      </div>
+      {viewedCats.length > 0 && (
+          <div className="viewed-history">
+          <ViewedHistory viewedCats={viewedCats} />
+        </div>
+      )
+
+      }
+      
       <div className="display-card">
         <h1>VENI VECI</h1>
         <h3>Come find your dream cats</h3>
@@ -115,7 +120,7 @@ const App = () => {
         />
         
         )}
-        <button onClick={fetchRandomCat}>Discover</button>
+        <button onClick={fetchRandomCat} className='discover'>Discover</button>
       </div>
       <div className="banned-list">
         <BannedList banned={banList} />

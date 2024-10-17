@@ -4,7 +4,7 @@ const BannedList = ({ banned }) => {
         <h2>Banned List</h2>
         <ul>
           {banned.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index} className="banned">{item}</li>
           ))}
         </ul>
       </div>

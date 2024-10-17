@@ -2,7 +2,6 @@
 
 .display-card {
   
-    padding: 20px; /* Add padding to the card */
     border-radius: 8px; /* Rounded corners for the card */
     text-align: center; /* Center-align text and images */
   }
@@ -25,6 +24,6 @@
     display: flex;
     justify-content: center; /* Center the feature buttons */
     flex-wrap: wrap; /* Wrap buttons if necessary */
-    gap: 10px; /* Space between buttons */
+    
   }
   

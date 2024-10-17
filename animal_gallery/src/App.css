@@ -1,10 +1,12 @@
 /* App.css */
 
 #root {
-  background-color: black; /* Set the entire page background to black */
-  height: 100vh; /* Use 100vh to make sure it covers the entire viewport height */
+  
   text-align: center;
   padding: 20px;
+}
+body{
+  background-color: black;
 }
 
 /* App container styling */
@@ -12,7 +14,7 @@
   display: flex; /* Use flexbox to arrange items */
   justify-content: space-between; /* Space out the columns */
   margin: 20px; /* Add some margin around the app */
-  height: 90vh;
+ 
 
 }
 
@@ -22,10 +24,11 @@
 .banned-list {
   flex: 1; /* Allow each section to grow equally */
   margin: 0 10px; /* Add some horizontal margin between columns */
-  background-color: rgba(128, 128, 128, 0.7); /* Set a semi-transparent gray background */
   color: white; /* Set text color to white for better contrast */
   border-radius: 8px; /* Optional: Add rounded corners */
   padding: 20px; /* Optional: Add some padding for inner spacing */
+  background-color: rgb(43, 23, 23);
+  border: yellow;
   
 }
 
@@ -36,4 +39,30 @@
 li {
   list-style-type: none; /* Remove the bullet points */
   padding-bottom: 30px; /* Add space between list items */
+}
+
+.banned {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+
+}
+
+.discover {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: large;
+}
+
+.discover:hover {
+  background-color: aqua;
+  padding: 20px;
+  cursor: pointer;
 }
