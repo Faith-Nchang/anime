@@ -1,7 +1,6 @@
-# Web Development Project 4 - *Name of App Here*
+# Web Development Project 4 - **Anime Gallery**
 
-Submitted by: **Anime Gallery**
-
+Submitted by: Faith Nchang
 This web app: **using api to get cat info**
 
 Time spent: **4** hours spent in total
