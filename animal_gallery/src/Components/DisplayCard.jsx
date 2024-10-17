@@ -6,7 +6,7 @@ const DisplayCard = ({ image, name, country, weight, life_span, width, height, i
   return (
     <div className="display-card">
       {/* Name */}
-      <h2 className="display-card__name">{name}</h2>
+      <h2 className="display-card__name">{name !== "unknown" && ({name})}</h2>
 
       {/* Features */}
       <div className="features">

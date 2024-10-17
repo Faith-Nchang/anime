@@ -38,7 +38,7 @@ const App = () => {
         image: catImage.url, // Get the image URL
         width: catImage.width, // Get the image width
         height: catImage.height, // Get the image height
-        name: breed ? breed.name : 'Not specified', // Get the breed name or default
+        name: breed ? breed.name : 'unknown', // Get the breed name or default
         country: breed ? breed.origin : 'unknown', // Get the origin
         weight: breed ? breed.weight.metric : 'unknown', // Get the weight
         life_span: breed ? breed.life_span : 'unknown', // Use the breed name or default

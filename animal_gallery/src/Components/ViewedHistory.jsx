@@ -10,7 +10,6 @@ const ViewedHistory = ({ viewedCats }) => {
             <li key={index}>
               <img src={cat.image} alt={cat.name} width="100" />
               <p>{cat.id}</p>
-              <p>{cat.name}</p>
             </li>
           ))}
         </ul>
